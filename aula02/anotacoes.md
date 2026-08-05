@@ -26,6 +26,11 @@ passwd
 ```bash
 htop
 ```
+### Para visualizar as informações do sistema (versão do OS, kernel, tempo ligado, memória RAM e outros detalhes)
+```bash
+neofetch
+```
+
 ---
 A utilizaçao de um servidor de desenvolvimento simula um ambiente de trabalho
 
@@ -62,7 +67,7 @@ A[Usuário]-->B[Aplicação WEB]-->C[(Banco de dados)]
 ## SGBD
 Sistema Gerenciador de Banco de Dados.
 
->função: Gerenciar, COntrolar e permitir consultas nos nissis bancos de dados
+>função: Gerenciar, Controlar e permitir consultas nos nossos bancos de dados
 
 ```mermaid
 graph TD
