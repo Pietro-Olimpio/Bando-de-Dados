@@ -30,7 +30,7 @@ ALTER USER postgres PASSWORD '1234';
 
 Para acessar o meu servidor fora do root usa o comando:
 ```bash
-sudo psql -h 127.0.0.1 -u postgres
+sudo psql -h 127.0.0.1 -U postgres
 ```
 ```mermaid
 graph LR
@@ -64,6 +64,8 @@ sudo nano pg_hba.conf
 >Nas ultimas linhas, adicinei: 
 `host all all 10.98.38.0/24 scram-sha-256`
 
+host all all 0.0.0.0/0  scra-sha-256
+
 Para criar um banco de dados, usamos o comando:
 
 ```sql
@@ -74,3 +76,11 @@ Para visualizar os bancos:
 ```bash
 \l
 ```
+Para logar o seu banco de dados no vscode instala a extensão do Postgresql e siga os proximos passos
+
+- coloque o ip 192.168.10.100
+- no usuario coloque : `postgres`
+- coloque a senha 
+- deixa a porta padrao
+- standard Connection
+- selscione o banco de dados que vc quer conectar.
