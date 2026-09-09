@@ -46,6 +46,10 @@ Para vermos quantos produtos existem cadastrados na loja, caso tenhoa muitos pro
 
 ![alt text](image-5.png)
 
+Total de produtos:
+
+![alt text](image-15.png)
+
 
 
 
@@ -69,6 +73,10 @@ tudo em uma unica consulta.
 O preço medio dos produtos da categoria Notebooks, arredondado pra 2 casas decimais é de 64578.38, Pra fazer isso fiz a soma dos produtos com AVG e o ROUND pra formatar pra 2 casas decimais, depois fiz uma busca expecifica, se n fazria a media de todos os produtos, e não queremos isso, queremos um em exato. Sendo assim:
 
 ![alt text](image-8.png)
+
+Preco_medio
+
+![alt text](image-14.png)
 
 
 
@@ -98,7 +106,7 @@ Assim de uma forma façil de entender, objetiva e organizada.
 
 
 ### C2. O valor imobilizado de um produto não está gravado na tabela: ele precisa ser calculado (preço x estoque). Crie a coluna calculada valor_em_estoque e mostre os 5 produtos com maior valor imobilizado, exibindo nome, preço, estoque e o valor calculado.
-Indiquei oque queria ver na tabela que seria nome,estoque e preco E valor_em_estoque, fiz um SUM(preco * estoque) indiquei que o nome seria valor_em_estoque e buxei na tabela em forma decrecente e limite de 5: 
+Indiquei oque queria ver na tabela que seria nome,estoque e preco E valor_em_estoque, fiz um (preco * estoque) indiquei que o nome seria valor_em_estoque e buxei na tabela em forma decrecente e limite de 5: 
 
 ![alt text](image-12.png)
 
@@ -108,4 +116,5 @@ Indiquei oque queria ver na tabela que seria nome,estoque e preco E valor_em_est
 
 ### C3. Compare o resultado de C2 com o produto mais caro que apareceu em A3. É o mesmo item? Escreva duas linhas explicando o que essa comparação revela sobre o estoque da loja.
 
-Não é o mesmo item, O produto mais caro da A3 é o Notebook Gamer 17 pol 32GB, que ta por R$ 20.386,90. E o C2 em 4º lugar no valor_em_estoque, pq tem so tem 3 item, totalizando R$ 61.160,70. Nem sempre o Produto mais caro da loja vai ser o maior valor imobilizado no estoque, as vezes produtos mais baratos, com muito mais unidades, poder vir a ter mais valor no estoque em si do que produtos caros com poucas unidades.
+Não são o mesmo item. O produto mais caro da loja é o Notebook Gamer 17 pol 32GB, com preço de R$ 20.386,90, mas ele não possui o maior valor imobilizado porque há apenas 3 unidades em estoque.
+Isso mostra que o preço individual de um produto não determina sozinho quanto dinheiro está parado no estoque, pois produtos mais baratos em grandes quantidades podem representar um valor imobilizado maior.
